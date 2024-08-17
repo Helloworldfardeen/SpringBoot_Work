@@ -1,0 +1,20 @@
+Notes In Point
+Spring Batch 
+Batch Processing is a technique which processes which processes data in a large group instread of a single element of data. where you can process a high volume of data with minimal human interaction.
+
+csv to database(billing analysis system)
+ report Generation System
+source to destination
+
+Job Launcher is the interface used to launch the job 
+
+                           -->Item Reader  source csv  
+Job Launcher--->Job--->step-->Item Processor 
+      |          \          -->Item Writer destination
+      |           \
+      |            \
+ Job Repository     \   -->Item Reader
+      |             step-->Item Processor 
+      |                 -->Item Writer destination
+      |
+   databases
